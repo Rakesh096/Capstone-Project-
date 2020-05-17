@@ -23,3 +23,9 @@ Different NLP algorithms were tried out - RNN, LSTM, GRU Traditional ML algorith
 
 Detailed Paper on the Project :https://drive.google.com/open?id=1rn8Bg5To2mh06ZgmxxLAREVR9FFtkOMmsbre41hg3u4
 
+## Limitations ##
+As part of Data pre-processing, we had grouped all assignment groups with less than 10 entries as one group (misc_grp) which had reduced the Target class from 74 to 50 groups. While applying this model in the real world there could be additional intervention required to classify the tickets if it has been classified as misc_grp by our model. Since the number of elements reported under misc_grp are less, we expect this intervention to be done less often.
+
+## Conclusion ##
+Although this model can classify the IT tickets with 91.24% accuracy, to achieve better accuracy in the real world it would be good if the business can collect additional data around 300 records for each group.
+
